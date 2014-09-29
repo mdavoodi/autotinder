@@ -1,0 +1,14 @@
+.autotinder {
+  color: #15CC83;
+  font-size: 53px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.btn-autolike {
+  color: #15CC83;
+  background-color: #fff;
+  border-color: #398439;
+  float: right;
+  font-weight: bold;
+}

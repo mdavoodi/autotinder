@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="autotinder">
+
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tinder.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/autotinder.js"></script>
+  </head>
+
+  <body>
+    <div class="container ng-scope" ng-view="">
+
+    <div class="container">
+    <div class="ti-landing clearfix row ng-scope">
+      <div class="ti-intro col-sm-5">
+          <h1 class="ti-logo"><span>AutoTinder</span></h1>
+          <h1 class="autotinder">Auto</h1>
+
+
+          <h2 class="hidden-xs">Meet everyone</h2>
+
+          <div class="col-md-9">
+
+            <div class="input-group" style="margin-bottom:10px;">
+              <input type="text" class="form-control" placeholder="Facebook ID">
+            </div>
+
+            <div class="input-group" style="margin-bottom:10px;">
+              <input type="text" class="form-control" placeholder="Tinder Token">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Get!</button>
+              </span>
+            </div>
+                <!-- <a ng-show="!download" ng-click="showDownload()" class="hidden-xs ti-get-app"><span>Download</span></a> -->
+            <button type="button" class="btn btn-autolike">Auto <span class="glyphicon glyphicon-heart"></span></button>
+
+          </div>
+
+
+      </div>
+      <div class="ti-phone-wrap">
+        <div class="ti-phone col-sm-6">
+          <div class="ti-cards-container">
+            <div class="ti-cards-window">
+              <div css3="css3" retina="app.retina" class="ti-cards pull-left list-unstyled ng-isolate-scope swiping">
+                <ul class="list-unstyled" style="display: block;">
+                  <li class="ti-card" style="-webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out;">
+                    <i class="ti-card-status"></i><div class="ti-card-overlay"></div>
+                    <figure><img src="http://static.gotinder.com/card_3.png"></figure>
+                  </li>
+                  <li class="ti-card" style="-webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out;">
+                    <i class="ti-card-status"></i><div class="ti-card-overlay"></div>
+                    <figure><img src="http://static.gotinder.com/card_2.png"></figure>
+                  </li>
+                  <li class="ti-card" style="-webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out;">
+                    <i class="ti-card-status"></i><div class="ti-card-overlay"></div>
+                    <figure><img src="http://static.gotinder.com/card_1.png"></figure>
+                  </li>
+                  <li class="ti-card nope swiping" style="-webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; opacity: 1; transform: translate(-400px, 50px) rotate(-30deg); -webkit-transform: translate(-400px, 50px) rotate(-30deg);">
+                    <i class="ti-card-status"></i><div class="ti-card-overlay"></div>
+                    <figure><img src="http://static.gotinder.com/card_6.png"></figure>
+                  </li>
+                </ul>
+                <a class="ti-cards-nope" style="-webkit-transition: all 0.1s ease-out; transition: all 0.1s ease-out;"></a>
+                <a class="ti-cards-like" style="-webkit-transition: all 0.1s ease-out; transition: all 0.1s ease-out;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+
+</html>
