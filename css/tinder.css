@@ -5011,31 +5011,14 @@ body.front.vcenter .ti-main-content .ti-landing {
     opacity: 0;
     filter: alpha(opacity=0);
 }
-.ti-cards.swiping ul .ti-card:nth-child(1) {
-    transform: translate(0,  50px) scale(.86,  .86);
-    -ms-transform: translate(0,  50px) scale(.86,  .86);
-    -webkit-transform: translate(0,  50px) scale(.86,  .86);
+.ti-cards ul .ti-card.swiping {
+    -webkit-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+    opacity: 1;
+    transform: translate(-400px, 50px) rotate(-30deg);
+    -webkit-transform: translate(400px, 50px) rotate(-30deg);
 }
-.ti-cards.swiping ul .ti-card:nth-child(2) {
-    transform: translate(0,  25px) scale(.93,  .93);
-    -ms-transform: translate(0,  25px) scale(.93,  .93);
-    -webkit-transform: translate(0,  25px) scale(.93,  .93);
-}
-.ti-cards.swiping ul .ti-card:nth-child(3) {
-    transform: translate(0,  0) scale(1,  1);
-    -ms-transform: translate(0,  0) scale(1,  1);
-    -webkit-transform: translate(0,  0) scale(1,  1);
-}
-.ti-cards.swiping ul .ti-card:nth-child(3) .ti-card-overlay {
-    -moz-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.ti-cards.swiping ul .ti-card:nth-child(4) {
-    transform: translate(0,  0) scale(1,  1);
-    -ms-transform: translate(0,  0) scale(1,  1);
-    -webkit-transform: translate(0,  0) scale(1,  1);
-}
+
 .ti-cards .ti-cards-like, .ti-cards .ti-cards-nope {
     position: absolute;
     width: 70px;
